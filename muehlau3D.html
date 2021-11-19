@@ -26,10 +26,10 @@
 
     <!-- query result -->
     <div id="queryresult">
-      <table id="qr_layername_table">
+      <!--<table id="qr_layername_table">
         <caption>Layer name</caption>
         <tr><td id="qr_layername"></td></tr>
-      </table>
+      </table>-->
 
       <table id="qr_coords_table">
         <caption>Clicked coordinates</caption>
@@ -37,8 +37,7 @@
       </table>
 
       <!-- camera actions -->
-      <div class="action-btn action-zoom" onclick="app.cameraAction.zoomIn();">Zoom in here</div>
-      <div class="action-btn action-move" onclick="app.cameraAction.move();">Move here</div>
+ 
       <div class="action-btn action-orbit" onclick="app.cameraAction.orbit(); ">Orbit around here</div>
 
       <!-- attributes -->
@@ -90,7 +89,7 @@
 
 <script>
 Q3D.Config.allVisible = true;
-Q3D.Config.viewpoint = {lookAt:{x:-25.03559197564513,y:23.51480428764354,z:6.218771700928256e-16},pos:{x:17.07284990469471,y:-15.826289544105972,z:44.153814646589574}};
+Q3D.Config.viewpoint = {lookAt:{x:-25.03559197564513,y:23.51480428764354,z:10.218771700928256e-16},pos:{x:17.07284990469471,y:-15.826289544105972,z:44.153814646589574}};
 if (typeof proj4 === "undefined") document.getElementById("lib_proj4js").style.display = "none";
 
 var container = document.getElementById("view"),
