@@ -103,6 +103,7 @@ app.loadSceneFile("./data/muehlau3D/scene.json", function (scene) {
   // scene file has been loaded
   app.start();
   app.popup.show("queryresult");
+  app.cameraAction.orbit();
 
 }, function (scene) {
   // all relevant files have been loaded
