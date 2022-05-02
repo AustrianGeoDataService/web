@@ -28,12 +28,12 @@ THREE.OrbitControls = function ( object, domElement ) {
 	// How far you can dolly in and out ( PerspectiveCamera only )
 	this.minDistance = 0;
 	//this.maxDistance = Infinity;
-	this.maxDistance = 0.0;
+	this.maxDistance = 1.0;
 
 	// How far you can zoom in and out ( OrthographicCamera only )
 	this.minZoom = 0;
 	// this.maxZoom = Infinity;
-	this.maxZoom = 0.0;
+	this.maxZoom = 1.0;
 
 	// How far you can orbit vertically, upper and lower limits.
 	// Range is 0 to Math.PI radians.
